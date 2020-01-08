@@ -41,5 +41,5 @@ It contains extensions of components of UIKit.
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  s.swift_version = 5.0
+  s.swift_version = '5.0'
 end
