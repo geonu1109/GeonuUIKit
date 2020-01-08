@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 GeonuUIKit is a set of extension of UIKit to implement iOS views easier.
+It contains extensions of components of UIKit.
                        DESC
 
   s.homepage         = 'https://github.com/geonu1109/GeonuUIKit'
@@ -37,6 +38,8 @@ GeonuUIKit is a set of extension of UIKit to implement iOS views easier.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.swift_version = 5.0
 end
