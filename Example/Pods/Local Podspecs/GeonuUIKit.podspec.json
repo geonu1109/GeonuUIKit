@@ -1,0 +1,22 @@
+{
+  "name": "GeonuUIKit",
+  "version": "0.1.0",
+  "summary": "A short description of GeonuUIKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/geonu1109@gmail.com/GeonuUIKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "geonu1109@gmail.com": "geonu1109@daou.co.kr"
+  },
+  "source": {
+    "git": "https://github.com/geonu1109@gmail.com/GeonuUIKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GeonuUIKit/Classes/**/*"
+}

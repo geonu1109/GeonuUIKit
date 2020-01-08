@@ -1,0 +1,16 @@
+PODS:
+  - GeonuUIKit (0.1.0)
+
+DEPENDENCIES:
+  - GeonuUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  GeonuUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GeonuUIKit: 972b8ab14cbdd36bbfdb608542cc43fe91992773
+
+PODFILE CHECKSUM: 79000dd55d5761067752571be2b1f135cdf760f5
+
+COCOAPODS: 1.8.4
