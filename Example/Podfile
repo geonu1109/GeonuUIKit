@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GeonuUIKit_Example' do
+  pod 'GeonuUIKit', :path => '../'
+
+  target 'GeonuUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
