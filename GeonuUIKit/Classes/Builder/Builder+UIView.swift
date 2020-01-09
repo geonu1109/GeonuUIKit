@@ -15,55 +15,46 @@ extension Builder where Product: UIView {
     /**
      Adds the view as a subview of the superview and return the view.
      */
-    @discardableResult
     public func superview(_ superview: UIView) -> Self {
         superview.addSubview(product)
         return self
     }
     
-    @discardableResult
     public func subview(_ view: UIView) -> Self {
         self.product.addSubview(view)
         return self
     }
     
-    @discardableResult
     public func subviews(_ views: [UIView]) -> Self {
         views.forEach(self.product.addSubview)
         return self
     }
     
-    @discardableResult
     public func alpha(_ alpha: CGFloat) -> Self {
         self.product.alpha = alpha
         return self
     }
     
-    @discardableResult
     public func isHidden(_ isHidden: Bool) -> Self {
         self.product.isHidden = isHidden
         return self
     }
     
-    @discardableResult
     public func clipsToBounds(_ clipsToBounds: Bool) -> Self {
         self.product.clipsToBounds = clipsToBounds
         return self
     }
     
-    @discardableResult
     public func backgroundColor(_ backgroundColor: UIColor) -> Self {
         self.product.backgroundColor = backgroundColor
         return self
     }
     
-    @discardableResult
     public func tintColor(_ tintColor: UIColor) -> Self {
         self.product.tintColor = tintColor
         return self
     }
     
-    @discardableResult
     public func contentMode(_ contentMode: UIView.ContentMode) -> Self {
         self.product.contentMode = contentMode
         return self
@@ -74,7 +65,6 @@ extension Builder where Product: UIView {
     /**
      Apply rounded corners of the layer's background of the view and return the view.
      */
-    @discardableResult
     public func cornerRadius(_ cornerRadius: CGFloat) -> Self {
         self.product.layer.cornerRadius = cornerRadius
         return self
@@ -87,7 +77,6 @@ extension Builder where Product: UIView {
         - color: The color of the layer’s border. The default value of this property is an opaque black color.
         - width: The width of the layer’s border. The default value of this property is 0.0.
      */
-    @discardableResult
     public func border(_ color: UIColor? = .rgba(0, 0, 0, 0), _ width: CGFloat = 0.0) -> Self {
         self.product.layer.borderColor = color?.cgColor
         self.product.layer.borderWidth = width
@@ -103,7 +92,6 @@ extension Builder where Product: UIView {
         - offset: The offset (in points) of the layer’s shadow. The default value of this property is (0.0, -3.0).
         - radius: The blur radius (in points) used to render the layer’s shadow. You specify the radius The default value of this property is 3.0.
      */
-    @discardableResult
     public func shadow(color: UIColor? = .rgba(0, 0, 0, 0), opacity: CGFloat = 0.0, offset: CGPoint = .init(x: 0.0, y: -3.0), radius: CGFloat = 3.0) -> Self {
         self.product.layer.shadowColor = color?.cgColor
         self.product.layer.shadowOpacity = .init(opacity)
@@ -114,7 +102,6 @@ extension Builder where Product: UIView {
     
     // MARK: Setup methods of the constraints of the view.
     
-    @discardableResult
     public func positionConstraint(from thisConstraintType: NSLayoutConstraint.PositionType? = nil, to targetConstraintType: NSLayoutConstraint.PositionType, of targetView: UIView? = nil, offset: CGFloat = .zero) -> Self {
         guard let targetView: UIView = targetView ?? self.product.superview, self.product.isSharingCommonAncestorView(with: targetView) else {
             return self
@@ -124,7 +111,6 @@ extension Builder where Product: UIView {
         return self
     }
     
-    @discardableResult
     public func sizeConstraint(to constraintType: NSLayoutConstraint.SizeType, value: CGFloat) -> Self {
         self.product.translatesAutoresizingMaskIntoConstraints = false
         self.product.addConstraint(.init(item: self.product, attribute: constraintType.attribute, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: value))

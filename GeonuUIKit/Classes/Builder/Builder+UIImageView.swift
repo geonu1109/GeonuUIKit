@@ -8,7 +8,6 @@
 import UIKit
 
 extension Builder where Product: UIImageView {
-    @discardableResult
     public func image(_ image: UIImage) -> Self {
         self.product.image = image
         return self
