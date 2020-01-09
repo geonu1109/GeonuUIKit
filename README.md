@@ -22,7 +22,7 @@ pod 'GeonuUIKit'
 
 ## Author
 
-geonu1109@gmail.com, geonu1109@daou.co.kr
+Geonu Jeon, geonu1109@gmail.com
 
 ## License
 
