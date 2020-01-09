@@ -18,13 +18,23 @@ extension Builder where Product: UIStackView {
         return self
     }
     
+    public func removeArrangedSubview(_ view: UIView) -> Self {
+        self.product.removeArrangedSubview(view)
+        return self
+    }
+    
+    public func addArrangedSubview(_ view: UIView, at stackIndex: Int) -> Self {
+        self.product.insertArrangedSubview(view, at: stackIndex)
+        return self
+    }
+    
     public func axis(_ axis: NSLayoutConstraint.Axis) -> Self {
         self.product.axis = axis
         return self
     }
     
-    public func spacing(_ spacing: CGFloat) -> Self {
-        self.product.spacing = spacing
+    public func distribution(_ distribution: UIStackView.Distribution) -> Self {
+        self.product.distribution = distribution
         return self
     }
     
@@ -33,8 +43,8 @@ extension Builder where Product: UIStackView {
         return self
     }
     
-    public func distribution(_ distribution: UIStackView.Distribution) -> Self {
-        self.product.distribution = distribution
+    public func spacing(_ spacing: CGFloat) -> Self {
+        self.product.spacing = spacing
         return self
     }
 }
