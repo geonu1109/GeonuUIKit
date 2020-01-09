@@ -10,10 +10,6 @@ import UIKit
 extension UIView: Buildable {}
 
 extension Builder where Product: UIView {
-    public convenience init() {
-        self.init(product: .init(frame: .zero))
-    }
-    
     // MARK: Setup methods of the view.
     
     /**
@@ -26,14 +22,14 @@ extension Builder where Product: UIView {
     }
     
     @discardableResult
-    public func subview(_ subview: UIView) -> Self {
-        self.product.addSubview(subview)
+    public func subview(_ view: UIView) -> Self {
+        self.product.addSubview(view)
         return self
     }
     
     @discardableResult
-    public func subviews(_ subviews: [UIView]) -> Self {
-        subviews.forEach(self.product.addSubview)
+    public func subviews(_ views: [UIView]) -> Self {
+        views.forEach(self.product.addSubview)
         return self
     }
     

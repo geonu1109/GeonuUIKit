@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let titleLabel: UILabel = Builder<UILabel>()
+        let titleLabel: UILabel = UILabel(frame: .zero).builder
             .text("hello world")
             .textColor(.brown)
             .font(.systemFont(ofSize: 18, weight: .bold))
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
             .positionConstraint(to: .centerX)
             .product
         
-        let rectView: UIView = Builder<UIView>()
+        let rectView: UIView = UIView(frame: .zero).builder
             .backgroundColor(.orange)
             .cornerRadius(20)
             .shadow(color: .gray, opacity: 0.5, offset: .init(x: 10, y: 10), radius: 20)
