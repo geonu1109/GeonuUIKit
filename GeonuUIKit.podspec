@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GeonuUIKit'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'GeonuUIKit is library that makes it easier to implement iOS views with UIKit.'
 
 # This description is used to generate tags and improve search results.
