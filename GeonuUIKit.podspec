@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GeonuUIKit'
-  s.version          = '0.1.0'
-  s.summary          = 'GeonuUIKit is a set of extension of UIKit to implement iOS views easier.'
+  s.version          = '0.2.0'
+  s.summary          = 'GeonuUIKit is library that makes it easier to implement iOS views with UIKit.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-GeonuUIKit is a set of extension of UIKit to implement iOS views easier.
-It contains extensions of components of UIKit.
+GeonuUIKit is library that makes it easier to implement iOS views with UIKit.
+It contains extensions of components of UIKit and UIKit components builder.
                        DESC
 
   s.homepage         = 'https://github.com/geonu1109/GeonuUIKit'
