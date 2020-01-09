@@ -19,6 +19,7 @@
 		7961E27223C6C1C600411CFD /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27123C6C1C600411CFD /* NSAttributedString.swift */; };
 		7961E27423C6C20900411CFD /* Builder+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27323C6C20900411CFD /* Builder+UIButton.swift */; };
 		7961E27623C6C2EB00411CFD /* Builder+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27523C6C2EB00411CFD /* Builder+UIImageView.swift */; };
+		7961E27923C6E45C00411CFD /* Builder+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27823C6E45C00411CFD /* Builder+UIStackView.swift */; };
 		79A2AC4123C5BF29003D2F84 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2AC3C23C5BF29003D2F84 /* UIView.swift */; };
 		79A2AC4223C5BF29003D2F84 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2AC3D23C5BF29003D2F84 /* UIColor.swift */; };
 		7A4CFF839E98312DA8535C0BF609132D /* Pods-GeonuUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0714F589D75E689D4D4526A50553050 /* Pods-GeonuUIKit_Tests-dummy.m */; };
@@ -70,6 +71,7 @@
 		7961E27123C6C1C600411CFD /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		7961E27323C6C20900411CFD /* Builder+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIButton.swift"; sourceTree = "<group>"; };
 		7961E27523C6C2EB00411CFD /* Builder+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIImageView.swift"; sourceTree = "<group>"; };
+		7961E27823C6E45C00411CFD /* Builder+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIStackView.swift"; sourceTree = "<group>"; };
 		79A2AC3C23C5BF29003D2F84 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		79A2AC3D23C5BF29003D2F84 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		8C4DB7917646576133D00A017F63FE77 /* Pods-GeonuUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeonuUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				7961E26F23C6C11600411CFD /* Builder+UILabel.swift */,
 				7961E27323C6C20900411CFD /* Builder+UIButton.swift */,
 				7961E27523C6C2EB00411CFD /* Builder+UIImageView.swift */,
+				7961E27823C6E45C00411CFD /* Builder+UIStackView.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7961E27623C6C2EB00411CFD /* Builder+UIImageView.swift in Sources */,
+				7961E27923C6E45C00411CFD /* Builder+UIStackView.swift in Sources */,
 				79A2AC4123C5BF29003D2F84 /* UIView.swift in Sources */,
 				7961E26823C6BD9E00411CFD /* Builder.swift in Sources */,
 				79A2AC4223C5BF29003D2F84 /* UIColor.swift in Sources */,
@@ -515,7 +519,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GeonuUIKit/GeonuUIKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GeonuUIKit/GeonuUIKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GeonuUIKit/GeonuUIKit.modulemap";
 				PRODUCT_MODULE_NAME = GeonuUIKit;
@@ -581,7 +585,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GeonuUIKit/GeonuUIKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GeonuUIKit/GeonuUIKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GeonuUIKit/GeonuUIKit.modulemap";
 				PRODUCT_MODULE_NAME = GeonuUIKit;
