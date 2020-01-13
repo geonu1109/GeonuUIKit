@@ -15,6 +15,24 @@ extension ChainingSetter where Component: UIButton {
     }
     
     @discardableResult
+    public func setAttributedTitle(_ title: NSAttributedString, for state: UIControl.State = .normal) -> Self {
+        self.component.setAttributedTitle(title, for: state)
+        return self
+    }
+    
+    @discardableResult
+    public func setTitleWithAttributes(_ title: String, attributes: NSAttributedString.TextAttributes) -> Self {
+        return self.setAttributedTitle(.init(string: title, attributes: attributes.dict))
+    }
+    
+    @discardableResult
+    public func setTitleWithConfigureAttributes(_ title: String, configuration: (NSAttributedString.TextAttributes) -> Void) -> Self {
+        let attributes: NSAttributedString.TextAttributes = .init()
+        configuration(attributes)
+        return self.setTitleWithAttributes(title, attributes: attributes)
+    }
+    
+    @discardableResult
     public func setTitleColor(_ titleColor: UIColor, for state: UIControl.State = .normal) -> Self {
         self.component.setTitleColor(titleColor, for: state)
         return self
