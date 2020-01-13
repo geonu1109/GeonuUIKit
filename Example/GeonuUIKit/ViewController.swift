@@ -34,6 +34,21 @@ class ViewController: UIViewController {
             .addSizeConstraint(to: .height, value: 80)
             .addSizeConstraint(to: .width, value: 80)
             .component
+        
+        let footerLabel: UILabel = UILabel(frame: .zero).chainingSetter
+            .setTextWithConfigureAttributes(text: "email", configuration: {
+                $0.chainingSetter
+                    .setForegroundColor(.cyan)
+            })
+            .setTextAlignment(.center)
+            .setBorder(.black, 1)
+            .setCornerRadius(5)
+            .setSuperview(self.view)
+            .addPositionConstraint(to: .bottom, offset: -20)
+            .addPositionConstraint(to: .centerX)
+            .addSizeConstraint(to: .height, value: 30)
+            .addSizeConstraint(to: .width, value: 80)
+            .component
     }
 
     override func didReceiveMemoryWarning() {
