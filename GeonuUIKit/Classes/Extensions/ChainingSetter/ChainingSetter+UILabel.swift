@@ -49,4 +49,12 @@ extension ChainingSetter where Component: UILabel {
         self.component.attributedText = .init(string: text, attributes: attributes.dict)
         return self
     }
+    
+    @discardableResult
+    public func setTextWithConfigureAttributes(text: String, configuration: (NSAttributedString.TextAttributes) -> Void) -> Self {
+        let attributes: NSAttributedString.TextAttributes = .init()
+        configuration(attributes)
+        self.component.attributedText = .init(string: text, attributes: attributes.dict)
+        return self
+    }
 }
