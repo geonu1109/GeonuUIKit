@@ -1,5 +1,5 @@
 //
-//  UIChainingSetter+UIView.swift
+//  ChainingSetter+UIView.swift
 //  GeonuUIKit
 //
 //  Created by Geonu Jeon on 2020/01/10.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension UIView: UIChaningSettable {}
+extension UIView: ChaningSettable {}
 
-extension UIChainingSetter where Component: UIView {
+extension ChainingSetter where Component: UIView {
     // MARK: Setup methods of the view.
     
     /**

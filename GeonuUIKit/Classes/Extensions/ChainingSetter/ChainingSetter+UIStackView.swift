@@ -1,5 +1,5 @@
 //
-//  UIChainingSetter+UIStackView.swift
+//  ChainingSetter+UIStackView.swift
 //  GeonuUIKit
 //
 //  Created by Geonu Jeon on 2020/01/10.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIChainingSetter where Component: UIStackView {
+extension ChainingSetter where Component: UIStackView {
     @discardableResult
     public func addArrangedSubview(_ view: UIView) -> Self {
         self.component.addArrangedSubview(view)

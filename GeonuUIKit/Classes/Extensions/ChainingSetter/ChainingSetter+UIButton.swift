@@ -1,5 +1,5 @@
 //
-//  UIChainingSetter+UIButton.swift
+//  ChainingSetter+UIButton.swift
 //  GeonuUIKit
 //
 //  Created by Geonu Jeon on 2020/01/10.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIChainingSetter where Component: UIButton {
+extension ChainingSetter where Component: UIButton {
     @discardableResult
     public func setTitle(_ title: String, for state: UIControl.State = .normal) -> Self {
         self.component.setTitle(title, for: state)

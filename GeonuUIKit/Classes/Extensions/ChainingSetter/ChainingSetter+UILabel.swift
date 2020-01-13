@@ -1,5 +1,5 @@
 //
-//  UIChainingSetter+UILabel.swift
+//  ChainingSetter+UILabel.swift
 //  GeonuUIKit
 //
 //  Created by Geonu Jeon on 2020/01/10.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIChainingSetter where Component: UILabel {
+extension ChainingSetter where Component: UILabel {
     @discardableResult
     public func setText(_ text: String) -> Self {
         self.component.text = text

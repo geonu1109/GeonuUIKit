@@ -1,5 +1,5 @@
 //
-//  UIChainingSetter+UISwitch.swift
+//  ChainingSetter+UISwitch.swift
 //  GeonuUIKit
 //
 //  Created by 전건우 on 2020/01/13.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIChainingSetter where Component: UISwitch {
+extension ChainingSetter where Component: UISwitch {
     @discardableResult
     public func setOnTintColor(_ onTintColor: UIColor?) -> Self {
         self.component.onTintColor = onTintColor

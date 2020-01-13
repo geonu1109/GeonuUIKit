@@ -1,5 +1,5 @@
 //
-//  UIChainingSetter+UIScrollView.swift
+//  ChainingSetter+UIScrollView.swift
 //  GeonuUIKit
 //
 //  Created by Geonu Jeon on 2020/01/10.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIChainingSetter where Component: UIScrollView {
+extension ChainingSetter where Component: UIScrollView {
     @discardableResult
     public func setContentOffset(_ contentOffset: CGPoint) -> Self {
         self.component.contentOffset = contentOffset

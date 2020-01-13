@@ -1,5 +1,5 @@
 //
-//  UIChainingSetter+UIActivityIndicator.swift
+//  ChainingSetter+UIActivityIndicator.swift
 //  GeonuUIKit
 //
 //  Created by 전건우 on 2020/01/13.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIChainingSetter where Component: UIActivityIndicatorView {
+extension ChainingSetter where Component: UIActivityIndicatorView {
     @discardableResult
     public func setStyle(_ style: UIActivityIndicatorView.Style) -> Self {
         self.component.style = style
