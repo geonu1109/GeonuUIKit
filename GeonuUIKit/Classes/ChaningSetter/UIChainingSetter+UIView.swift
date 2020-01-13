@@ -71,6 +71,12 @@ extension UIChainingSetter where Component: UIView {
     
     // MARK: Setup methods of the view's layer.
     
+    @discardableResult
+    public func configureLayer(_ configuration: (CALayer) -> Void) -> Self {
+        configuration(self.component.layer)
+        return self
+    }
+    
     /**
      Apply rounded corners of the layer's background of the view and return the view.
      */

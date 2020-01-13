@@ -8,9 +8,9 @@
 import UIKit
 
 public class UIChainingSetter<Component: UIView> {
-    let component: Component
+    public let component: Component
     
-    init(component: Component) {
+    public init(component: Component) {
         self.component = component
     }
 }

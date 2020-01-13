@@ -33,7 +33,7 @@ extension UIChainingSetter where Component: UIButton {
     
     @discardableResult
     public func setFont(_ font: UIFont) -> Self {
-        self.configureTitleLabel({ $0.component.setFont(font) })
+        self.configureTitleLabel({ $0.chainingSetter.setFont(font) })
         return self
     }
     

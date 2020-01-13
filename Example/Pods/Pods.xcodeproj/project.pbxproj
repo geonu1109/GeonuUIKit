@@ -11,17 +11,8 @@
 		1D69FAA0DC885CE893CC585EC9C43DEA /* Pods-GeonuUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F31B51DEBAE0E782007A7A6214095ADB /* Pods-GeonuUIKit_Example-dummy.m */; };
 		1EF6783E7BEC28A38E88FCEEAE9E6132 /* GeonuUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D333E0DFECF921E32C767C29C75FCC /* GeonuUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40A569BB9CF473FB21FA17FCCBCCA62F /* Pods-GeonuUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF293168E5448FA3713B9ACE5C61C19A /* Pods-GeonuUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7961E26823C6BD9E00411CFD /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E26723C6BD9E00411CFD /* Builder.swift */; };
-		7961E26A23C6BEA800411CFD /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E26923C6BEA800411CFD /* Buildable.swift */; };
-		7961E26C23C6BEC400411CFD /* Builder+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E26B23C6BEC400411CFD /* Builder+UIView.swift */; };
 		7961E26E23C6C07300411CFD /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E26D23C6C07300411CFD /* NSLayoutConstraint.swift */; };
-		7961E27023C6C11600411CFD /* Builder+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E26F23C6C11600411CFD /* Builder+UILabel.swift */; };
 		7961E27223C6C1C600411CFD /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27123C6C1C600411CFD /* NSAttributedString.swift */; };
-		7961E27423C6C20900411CFD /* Builder+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27323C6C20900411CFD /* Builder+UIButton.swift */; };
-		7961E27623C6C2EB00411CFD /* Builder+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27523C6C2EB00411CFD /* Builder+UIImageView.swift */; };
-		7961E27923C6E45C00411CFD /* Builder+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27823C6E45C00411CFD /* Builder+UIStackView.swift */; };
-		7961E27B23C6E74C00411CFD /* Builder+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27A23C6E74C00411CFD /* Builder+UIScrollView.swift */; };
-		7961E27D23C708BE00411CFD /* Builder+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961E27C23C708BE00411CFD /* Builder+UIActivityIndicatorView.swift */; };
 		797557A023C8131100C4C346 /* UIChainingSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975579F23C8131100C4C346 /* UIChainingSetter.swift */; };
 		797557A223C8136B00C4C346 /* UIChainingSetter+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797557A123C8136B00C4C346 /* UIChainingSetter+UIView.swift */; };
 		797557A423C8146500C4C346 /* UIChainingSetter+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797557A323C8146500C4C346 /* UIChainingSetter+UILabel.swift */; };
@@ -32,6 +23,8 @@
 		797557B023C81E9900C4C346 /* UIChainingSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797557AF23C81E9900C4C346 /* UIChainingSettable.swift */; };
 		79A2AC4123C5BF29003D2F84 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2AC3C23C5BF29003D2F84 /* UIView.swift */; };
 		79A2AC4223C5BF29003D2F84 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A2AC3D23C5BF29003D2F84 /* UIColor.swift */; };
+		79B5A78823CC351300B13D51 /* UIChainingSetter+UIActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5A78723CC351300B13D51 /* UIChainingSetter+UIActivityIndicator.swift */; };
+		79B5A78A23CC357100B13D51 /* UIChainingSetter+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5A78923CC357100B13D51 /* UIChainingSetter+UISwitch.swift */; };
 		7A4CFF839E98312DA8535C0BF609132D /* Pods-GeonuUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0714F589D75E689D4D4526A50553050 /* Pods-GeonuUIKit_Tests-dummy.m */; };
 		A9B1244350AE4DF8F111DC7393D3A22C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		CE19DAA7A3C6A3B36A7B0C21AA782B4D /* GeonuUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF80A19A115B174775FA71CB1C1877F /* GeonuUIKit-dummy.m */; };
@@ -73,17 +66,8 @@
 		6224205A2CFE11AB5ECA94B3FD01DE9F /* GeonuUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GeonuUIKit.xcconfig; sourceTree = "<group>"; };
 		68BDEB21DB3DF9125EFA8DCC4A5A2275 /* Pods-GeonuUIKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeonuUIKit_Example-Info.plist"; sourceTree = "<group>"; };
 		69945B9C7474F63A318FEE2B89EA2FEE /* Pods-GeonuUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeonuUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		7961E26723C6BD9E00411CFD /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
-		7961E26923C6BEA800411CFD /* Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
-		7961E26B23C6BEC400411CFD /* Builder+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIView.swift"; sourceTree = "<group>"; };
 		7961E26D23C6C07300411CFD /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
-		7961E26F23C6C11600411CFD /* Builder+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UILabel.swift"; sourceTree = "<group>"; };
 		7961E27123C6C1C600411CFD /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
-		7961E27323C6C20900411CFD /* Builder+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIButton.swift"; sourceTree = "<group>"; };
-		7961E27523C6C2EB00411CFD /* Builder+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIImageView.swift"; sourceTree = "<group>"; };
-		7961E27823C6E45C00411CFD /* Builder+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIStackView.swift"; sourceTree = "<group>"; };
-		7961E27A23C6E74C00411CFD /* Builder+UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIScrollView.swift"; sourceTree = "<group>"; };
-		7961E27C23C708BE00411CFD /* Builder+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Builder+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
 		7975579F23C8131100C4C346 /* UIChainingSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIChainingSetter.swift; sourceTree = "<group>"; };
 		797557A123C8136B00C4C346 /* UIChainingSetter+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIChainingSetter+UIView.swift"; sourceTree = "<group>"; };
 		797557A323C8146500C4C346 /* UIChainingSetter+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIChainingSetter+UILabel.swift"; sourceTree = "<group>"; };
@@ -94,6 +78,8 @@
 		797557AF23C81E9900C4C346 /* UIChainingSettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIChainingSettable.swift; sourceTree = "<group>"; };
 		79A2AC3C23C5BF29003D2F84 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		79A2AC3D23C5BF29003D2F84 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		79B5A78723CC351300B13D51 /* UIChainingSetter+UIActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIChainingSetter+UIActivityIndicator.swift"; sourceTree = "<group>"; };
+		79B5A78923CC357100B13D51 /* UIChainingSetter+UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIChainingSetter+UISwitch.swift"; sourceTree = "<group>"; };
 		8C4DB7917646576133D00A017F63FE77 /* Pods-GeonuUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeonuUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8DF80A19A115B174775FA71CB1C1877F /* GeonuUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GeonuUIKit-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -173,22 +159,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7961E27723C6C33700411CFD /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				7961E26723C6BD9E00411CFD /* Builder.swift */,
-				7961E26923C6BEA800411CFD /* Buildable.swift */,
-				7961E26B23C6BEC400411CFD /* Builder+UIView.swift */,
-				7961E26F23C6C11600411CFD /* Builder+UILabel.swift */,
-				7961E27323C6C20900411CFD /* Builder+UIButton.swift */,
-				7961E27523C6C2EB00411CFD /* Builder+UIImageView.swift */,
-				7961E27823C6E45C00411CFD /* Builder+UIStackView.swift */,
-				7961E27A23C6E74C00411CFD /* Builder+UIScrollView.swift */,
-				7961E27C23C708BE00411CFD /* Builder+UIActivityIndicatorView.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
 		7975579E23C8130600C4C346 /* ChaningSetter */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +170,8 @@
 				797557A923C816DE00C4C346 /* UIChainingSetter+UIImageView.swift */,
 				797557AB23C8171200C4C346 /* UIChainingSetter+UIStackView.swift */,
 				797557AD23C8175C00C4C346 /* UIChainingSetter+UIScrollView.swift */,
+				79B5A78723CC351300B13D51 /* UIChainingSetter+UIActivityIndicator.swift */,
+				79B5A78923CC357100B13D51 /* UIChainingSetter+UISwitch.swift */,
 			);
 			path = ChaningSetter;
 			sourceTree = "<group>";
@@ -208,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				7975579E23C8130600C4C346 /* ChaningSetter */,
-				7961E27723C6C33700411CFD /* Builder */,
 				79A2AC3B23C5BF29003D2F84 /* Extensions */,
 			);
 			name = Classes;
@@ -458,28 +429,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7961E27623C6C2EB00411CFD /* Builder+UIImageView.swift in Sources */,
 				797557AA23C816DE00C4C346 /* UIChainingSetter+UIImageView.swift in Sources */,
-				7961E27923C6E45C00411CFD /* Builder+UIStackView.swift in Sources */,
+				79B5A78A23CC357100B13D51 /* UIChainingSetter+UISwitch.swift in Sources */,
 				797557A023C8131100C4C346 /* UIChainingSetter.swift in Sources */,
 				79A2AC4123C5BF29003D2F84 /* UIView.swift in Sources */,
-				7961E26823C6BD9E00411CFD /* Builder.swift in Sources */,
 				79A2AC4223C5BF29003D2F84 /* UIColor.swift in Sources */,
-				7961E26C23C6BEC400411CFD /* Builder+UIView.swift in Sources */,
 				CE19DAA7A3C6A3B36A7B0C21AA782B4D /* GeonuUIKit-dummy.m in Sources */,
 				7961E27223C6C1C600411CFD /* NSAttributedString.swift in Sources */,
 				797557A423C8146500C4C346 /* UIChainingSetter+UILabel.swift in Sources */,
 				797557A223C8136B00C4C346 /* UIChainingSetter+UIView.swift in Sources */,
 				797557A823C8157900C4C346 /* UIChainingSetter+UIButton.swift in Sources */,
-				7961E27023C6C11600411CFD /* Builder+UILabel.swift in Sources */,
-				7961E26A23C6BEA800411CFD /* Buildable.swift in Sources */,
 				797557AE23C8175C00C4C346 /* UIChainingSetter+UIScrollView.swift in Sources */,
 				797557AC23C8171200C4C346 /* UIChainingSetter+UIStackView.swift in Sources */,
-				7961E27423C6C20900411CFD /* Builder+UIButton.swift in Sources */,
-				7961E27B23C6E74C00411CFD /* Builder+UIScrollView.swift in Sources */,
+				79B5A78823CC351300B13D51 /* UIChainingSetter+UIActivityIndicator.swift in Sources */,
 				7961E26E23C6C07300411CFD /* NSLayoutConstraint.swift in Sources */,
 				797557B023C81E9900C4C346 /* UIChainingSettable.swift in Sources */,
-				7961E27D23C708BE00411CFD /* Builder+UIActivityIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

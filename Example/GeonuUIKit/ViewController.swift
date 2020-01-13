@@ -14,26 +14,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let titleLabel: UILabel = UILabel(frame: .zero).builder
-            .text("hello world")
-            .textColor(.brown)
-            .font(.systemFont(ofSize: 18, weight: .bold))
-            .textAlignment(.center)
-            .superview(self.view)
-            .positionConstraint(to: .top, offset: 20)
-            .positionConstraint(to: .centerX)
-            .product
+        let titleLabel: UILabel = UILabel(frame: .zero).chainingSetter
+            .setText("hello world")
+            .setTextColor(.brown)
+            .setFont(.systemFont(ofSize: 18, weight: .bold))
+            .setTextAlignment(.center)
+            .setSuperview(self.view)
+            .addPositionConstraint(to: .top, offset: 20)
+            .addPositionConstraint(to: .centerX)
+            .component
         
-        let rectView: UIView = UIView(frame: .zero).builder
-            .backgroundColor(.orange)
-            .cornerRadius(20)
-            .shadow(color: .gray, opacity: 0.5, offset: .init(x: 10, y: 10), radius: 20)
-            .superview(self.view)
-            .positionConstraint(from: .top, to: .bottom, of: titleLabel, offset: 20)
-            .positionConstraint(to: .centerX, of: titleLabel)
-            .sizeConstraint(to: .height, value: 80)
-            .sizeConstraint(to: .width, value: 80)
-            .product
+        let rectView: UIView = UIView(frame: .zero).chainingSetter
+            .setBackgroundColor(.orange)
+            .setCornerRadius(20)
+            .setShadow(color: .gray, opacity: 0.5, offset: .init(x: 10, y: 10), radius: 20)
+            .setSuperview(self.view)
+            .addPositionConstraint(from: .top, to: .bottom, of: titleLabel, offset: 20)
+            .addPositionConstraint(to: .centerX, of: titleLabel)
+            .addSizeConstraint(to: .height, value: 80)
+            .addSizeConstraint(to: .width, value: 80)
+            .component
     }
 
     override func didReceiveMemoryWarning() {
