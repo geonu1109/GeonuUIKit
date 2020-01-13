@@ -16,7 +16,7 @@ extension NSLayoutConstraint {
         case centerX
         case centerY
         
-        var attribute: NSLayoutConstraint.Attribute {
+        public var attribute: NSLayoutConstraint.Attribute {
             switch self {
             case .top:
                 return .top
@@ -38,7 +38,7 @@ extension NSLayoutConstraint {
         case height
         case width
         
-        var attribute: NSLayoutConstraint.Attribute {
+        public var attribute: NSLayoutConstraint.Attribute {
             switch self {
             case .height:
                 return .height
