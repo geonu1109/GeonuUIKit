@@ -8,15 +8,15 @@
 import Foundation
 
 extension NSAttributedString {
-    public struct TextAttributes {
-        var font: UIFont? = nil
-        var foregroundColor: UIColor? = .black
-        var backgroundColor: UIColor? = nil
-        var kern: NSNumber? = 0
-        var underlineStyle: NSUnderlineStyle? = nil
-        var underlineColor: UIColor? = nil
+    public class TextAttributes {
+        public var font: UIFont? = nil
+        public var foregroundColor: UIColor? = .black
+        public var backgroundColor: UIColor? = nil
+        public var kern: NSNumber? = 0
+        public var underlineStyle: NSUnderlineStyle? = nil
+        public var underlineColor: UIColor? = nil
         
-        var dict: [NSAttributedString.Key: Any] {
+        public var dict: [NSAttributedString.Key: Any] {
             var result: [NSAttributedString.Key: Any] = [:]
             if let font: UIFont = self.font {
                 result[.font] = font
@@ -37,6 +37,15 @@ extension NSAttributedString {
                 result[.underlineColor] = underlineColor
             }
             return result
+        }
+        
+        public init(font: UIFont? = nil, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil, kern: NSNumber? = 0, underlineStyle: NSUnderlineStyle? = nil, underlineColor: UIColor? = nil) {
+            self.font = font
+            self.foregroundColor = foregroundColor
+            self.backgroundColor = backgroundColor
+            self.kern = kern
+            self.underlineStyle = underlineStyle
+            self.underlineColor = underlineColor
         }
     }
 }
