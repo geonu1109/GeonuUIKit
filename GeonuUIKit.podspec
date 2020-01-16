@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   # Root specification
   s.name = 'GeonuUIKit'
-  s.version = '0.3.2'
+  s.version = '0.3.3'
   s.swift_version = '5.0'
   s.author = { 'Geonu Jeon' => 'geonu1109@gmail.com' }
   s.license = { :type => 'MIT', :file => 'LICENSE' }
