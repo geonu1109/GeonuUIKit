@@ -21,15 +21,15 @@ extension ChainingSetter where Component: UIButton {
     }
     
     @discardableResult
-    public func setTitleWithAttributes(_ title: String, attributes: NSAttributedString.TextAttributes) -> Self {
-        return self.setAttributedTitle(.init(string: title, attributes: attributes.dict))
+    public func setTitleWithAttributes(_ title: String, attributes: NSAttributedString.TextAttributes, for state: UIControl.State = .normal) -> Self {
+        return self.setAttributedTitle(.init(string: title, attributes: attributes.dict), for: state)
     }
     
     @discardableResult
-    public func setTitleWithConfigureAttributes(_ title: String, configuration: (NSAttributedString.TextAttributes) -> Void) -> Self {
+    public func setTitleWithConfigureAttributes(_ title: String, configuration: (NSAttributedString.TextAttributes) -> Void, for state: UIControl.State = .normal) -> Self {
         let attributes: NSAttributedString.TextAttributes = .init()
         configuration(attributes)
-        return self.setTitleWithAttributes(title, attributes: attributes)
+        return self.setTitleWithAttributes(title, attributes: attributes, for: state)
     }
     
     @discardableResult
