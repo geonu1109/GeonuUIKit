@@ -31,7 +31,7 @@ extension NSAttributedString {
                 result[.kern] = kern
             }
             if let underlineStyle: NSUnderlineStyle = self.underlineStyle {
-                result[.underlineStyle] = underlineStyle
+                result[.underlineStyle] = underlineStyle.rawValue
             }
             if let underlineColor: UIColor = self.underlineColor {
                 result[.underlineColor] = underlineColor

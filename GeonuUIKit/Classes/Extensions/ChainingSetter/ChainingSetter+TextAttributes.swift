@@ -36,7 +36,7 @@ extension ChainingSetter where Component: NSAttributedString.TextAttributes {
     
     @discardableResult
     public func setUnderlineStyle(_ underlineStyle: NSUnderlineStyle) -> Self {
-        self.component.underlineStyle = underlineStyle.rawValue
+        self.component.underlineStyle = underlineStyle
         return self
     }
     
